@@ -17,3 +17,17 @@
     unstage = reset HEAD
     # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
+
+[alias]
+	lolp = log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s\"
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lolan = log --graph --decorate --pretty=oneline --abbrev-commit --all --name-status
+[color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+
+[pull]
+	ff = only
