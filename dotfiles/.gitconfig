@@ -1,0 +1,19 @@
+[user]
+	email = antoine.lizee@gmail.com
+	name = antoine-lizee-pi
+[push]
+	default = simple
+
+[alias]
+    st = status
+    s = status -s
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    ds = diff --staged
+    lg = log -p
+    ls = ls-files
+    unstage = reset HEAD
+    # Show files ignored by git:
+    ign = ls-files -o -i --exclude-standard
